@@ -13,7 +13,7 @@ board = [
     [0, 0, 5, 2, 0, 6, 3, 0, 0]
 ]
 
-"Function to print out board with lines for better visuals"
+#Function to print out board with lines for better visuals
 
 def print_board(s):
     for i in range(len(s)):
@@ -29,7 +29,7 @@ def print_board(s):
                 print(str(s[i][j]) + " ", end="")
 
 
-"function that checks each row and coloumn and square to see if a number is possible in that spot"
+#function that checks each row and coloumn and square to see if a number is possible in that spot
 
 def possible(y, x, n):
     global board
@@ -48,8 +48,8 @@ def possible(y, x, n):
     return True
 
 
-"this function checks if a slot is empty and while using backtracking " 
-" and recursion with the above function to solve the sudoku board"
+#this function checks if a slot is empty and while using backtracking 
+#and recursion with the above function to solve the sudoku board
 
 def solve():
     global board
